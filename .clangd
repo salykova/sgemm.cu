@@ -1,0 +1,10 @@
+CompileFlags:
+  Compiler: nvcc
+  Add:
+    - --no-cuda-version-check
+    - -std=c++17
+    - -stdlib=libc++
+  Remove:
+    - -forward-unknown-to-host-compiler
+    - --generate-code*
+    - -rdc=true

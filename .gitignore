@@ -1,0 +1,29 @@
+# General
+*.out
+*.s
+*.o
+tmp
+.cache
+.vscode
+data
+.DS_Store
+
+# Python-specific
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+venv
+env
+
+# Distribution / packaging
+.Python
+build/
+cuda_build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
