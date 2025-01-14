@@ -26,7 +26,7 @@ The benchmark settings such as minimum/maximum matrix sizes, step size, number o
 
 To visualize benchmark results, please install `matplotlib` and run
 
-```python
+```bash
 python plot_benchmark_data.py benchmark_results
 ```
 
