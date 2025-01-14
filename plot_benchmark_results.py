@@ -24,8 +24,7 @@ if __name__ == "__main__":
 
     ax.set_xlabel("m=n=k", fontsize=24)
     ax.set_ylabel("GFLOP/S", fontsize=24)
-    ax.set_title("CUDA 12.6, SGEMM_NN, RTX 3090 @ 1395MHz locked @ 350W", fontsize=22)
+    ax.set_title("sgemm.cu", fontsize=22)
     ax.legend(fontsize=12, loc='lower right', prop={'size': 19})
     ax.grid(axis='y')
-    ax.yaxis.set_major_locator(ticker.MultipleLocator(1e3))
     fig.savefig("benchmark_data.png")

@@ -16,7 +16,7 @@ else
     bash ./scripts/reset_clocks.sh
 fi
 
-bench_save_dir="benchmark_data"
+bench_save_dir="benchmark_results"
 mkdir -p ${bench_save_dir}
 file_name="sgemm.cu"
 
@@ -41,5 +41,3 @@ then
     bash ./scripts/reset_clocks.sh
 fi
 bash ./scripts/disable_pmode.sh
-
-python plot_data.py ${bench_save_dir}
