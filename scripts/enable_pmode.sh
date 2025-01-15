@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo nvidia-smi --persistence-mode=1 > /dev/null
+sudo nvidia-smi --persistence-mode=1

@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo nvidia-smi -rgc > /dev/null
-sudo nvidia-smi -rmc > /dev/null
+sudo nvidia-smi -rgc
+sudo nvidia-smi -rmc

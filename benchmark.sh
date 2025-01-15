@@ -8,12 +8,12 @@ warmup_iter=500
 CUBLAS=0
 lock_clocks=0
 
-bash ./scripts/enable_pmode.sh
+bash ./scripts/enable_pmode.sh > /dev/null
 if [ $lock_clocks -eq 1 ]
 then
-    bash ./scripts/lock_clocks.sh
+    bash ./scripts/lock_clocks.sh > /dev/null
 else
-    bash ./scripts/reset_clocks.sh
+    bash ./scripts/reset_clocks.sh > /dev/null
 fi
 
 bench_save_dir="benchmark_results"
@@ -38,6 +38,6 @@ fi
 
 if [ $lock_clocks -eq 1 ]
 then
-    bash ./scripts/reset_clocks.sh
+    bash ./scripts/reset_clocks.sh > /dev/null
 fi
-bash ./scripts/disable_pmode.sh
+bash ./scripts/disable_pmode.sh > /dev/null
