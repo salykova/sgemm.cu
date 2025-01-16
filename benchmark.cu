@@ -138,7 +138,7 @@ main(int argc, char** argv) {
         size_t FLOP = 2 * (size_t)m * n * k;
         double GFLOP = FLOP * 1e-9f;
 
-        int n_iter = std::max((int)(800000 / matsize), 4);
+        int n_iter = std::max((int)(1000*exp((-matsize + matsize_min)/3100.0)), 4);
         std::vector<float> elapsed_time_ms(n_iter, 0);
 
         cudaEvent_t start, stop;
