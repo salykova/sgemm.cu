@@ -1,6 +1,6 @@
 # High-Performance SGEMM on NVIDIA GPUs
 
-> **Important note:** while the implementation is expected to deliver high performance on all Ada/Ampere/Volta/Turing devices, it was specifically fine-tuned for and tested on NVIDIA RTX 3090 (GA102 chip: RTX 3080, A10, A40, A6000).
+> **Important note:** while the implementation is expected to be high-performant on all Ada/Ampere/Volta/Turing devices, it was specifically fine-tuned for and tested on NVIDIA RTX 3090 (GA102 chip - RTX 3080, A10, A40, A6000).
 
 ## Performance
 
@@ -16,7 +16,7 @@
 
 >Avoid using WSL for performance measurements. To ensure accurate and reliable results, please use a native Linux environment.
 
-To benchmark the code, run `benchmark.sh` and specify compute capability of your CUDA device. For example, on RTX 3090:
+To benchmark the code, specify compute capability of your CUDA device and run `benchmark.sh`. For example, on RTX 3090:
 
 ```bash
 bash benchmark.sh 86
@@ -32,7 +32,7 @@ python plot_benchmark_data.py benchmark_results
 
 ## Tests
 
-To test the implementation for correctness, run `test.sh` and specify compute capability of your CUDA device. For example, on RTX 3090:
+Use `test.sh` to test the implementation for correctness. For example, on RTX 3090:
 
 ```bash
 bash test.sh 86
