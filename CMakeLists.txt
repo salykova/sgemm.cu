@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.17 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.18 FATAL_ERROR)
 project(sgemm_fast LANGUAGES CUDA CXX)
 
 set(CMAKE_CUDA_USE_RESPONSE_FILE_FOR_INCLUDES 0)
