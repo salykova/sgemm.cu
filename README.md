@@ -34,7 +34,8 @@ Test environment:
 
 - OS: Ubuntu 24.04.1 LTS
 - GPU: NVIDIA RTX 3090
-- CUDA 12.6, V12.6.85
+- Driver Version: 550.120
+- CUDA Driver: 12.4, CUDA Runtime: 12.6, V12.6.85
 - CMake 3.28.3
 - g++ 13.3
 
